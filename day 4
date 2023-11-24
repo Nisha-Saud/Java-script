@@ -1,0 +1,47 @@
+function display ()
+ {
+   console.log("hello students");
+ }
+ display();
+
+ function memo (studentName)   //parameter
+ {
+   console.log("hello" + studentName);
+ }
+  let net = memo( "Ashutosh");  //argument
+
+  function sum(no1,no2)
+  {
+    return no1 + no2;
+  }
+  let result = sum(4,5);
+console.log(result);
+
+function print(data , times) //recursion
+{
+  if (times >0)  //condition most be given in recursion
+  {
+  console.log(data,times);
+  print(data,times -1);
+  }
+}
+console.log(print("hello",6));
+function facto (digit)
+{
+  if(digit >1)
+  {
+    return digit* facto(digit-1);
+  }
+  return 1;
+}
+console.log(facto (4));
+function subtract(dsg)
+{
+ return function (gen)
+ {
+  console.log(dsg+gen);
+ } 
+}
+let ans = subtract(8); //variable maa tyo funcrionn ko returned value aayera basyo
+ans(4); //as returned value is function so this variable can call that function inside the function
+
